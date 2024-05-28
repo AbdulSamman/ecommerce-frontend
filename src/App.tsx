@@ -8,17 +8,19 @@ export const App = () => {
   return (
     <>
       <div className="App">
-        <h1>
-          <Link to="/">Online Shop</Link>
-        </h1>
-        <nav>
-          <NavLink to={"/welcome"}>welcome</NavLink>
-          <NavLink to={"/products"}>products</NavLink>
-          <NavLink to={"/support"}>support</NavLink>
-          <NavLink to={"/aboutUs"}>about us</NavLink>
-        </nav>
+        <div className="header">
+          <h1>
+            <Link to="/">Online Shop</Link>
+          </h1>
+          <nav>
+            <NavLink to={"/welcome"}>welcome</NavLink>
+            <NavLink to={"/products"}>products</NavLink>
+            <NavLink to={"/support"}>support</NavLink>
+            <NavLink to={"/aboutUs"}>about us</NavLink>
+          </nav>
+        </div>
       </div>
-      <div className="line"> </div>
+
       <Routes>
         <Route path="/welcome" element={<PageWelcome />} />
         <Route path="/products" element={<PageProducts />} />
