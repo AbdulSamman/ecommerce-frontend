@@ -10,8 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    text-align: start;
     z-index: 1;
     row-gap: 2rem;
     padding: 0 0 8rem 3rem;
@@ -20,6 +18,22 @@
       font-size: 3.5rem;
       display: flex;
       flex-direction: column;
+
+      .subtitle {
+        position: relative;
+        width: fit-content;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 4px;
+          height: 15px;
+          background-color: rgba(red, 0.4);
+          box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5) inset;
+        }
+      }
     }
     p {
       font-size: 1.3rem;
@@ -54,6 +68,12 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      h1 {
+        align-items: center;
+        .subtitle {
+          font-size: 3rem;
+        }
+      }
     }
     button {
       width: 100%;

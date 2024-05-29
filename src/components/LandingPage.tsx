@@ -12,7 +12,7 @@ export const LandingPage: React.FC = () => {
         <section className="title">
           <h1>
             <span>Start Selling</span>
-            <span>{subtitle[currentSubtitle]}</span>
+            <span className="subtitle">{subtitle[currentSubtitle]}</span>
           </h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
