@@ -12,7 +12,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
   const [currentSubtitle, setCurrentSubtitle] = useState(0);
 
   const [rotateBox, setRotateBox] = useState(40);
-  const [positionImg, setPositionImg] = useState(20);
+  const [positionImg, setPositionImg] = useState(0);
   const handleScroll: HandleScroll = (_, scrollY) => {
     switch (true) {
       case scrollY >= 90:

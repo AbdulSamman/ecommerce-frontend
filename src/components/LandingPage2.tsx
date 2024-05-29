@@ -30,7 +30,6 @@ export const LandingPage2: React.FC = () => {
 
   return (
     <>
-      <hr />
       <div className="landingPage2">
         <section
           className="imagesContainer"

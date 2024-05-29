@@ -62,7 +62,7 @@
     width: 50%;
     height: 90%;
     left: 0;
-    background-color: red;
+    background-color: $boxColor;
     transform-origin: left top;
     transform: translateX(50%);
     transition: 1s step-start;
