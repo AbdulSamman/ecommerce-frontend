@@ -13,7 +13,7 @@ export const App = () => {
       <div className="App">
         <div className="header">
           <h1>
-            <Link to="/welcome">Online Shop</Link>
+            <Link to="/">Online Shop</Link>
           </h1>
           <nav>
             <NavLink to={"/products"}>products</NavLink>
@@ -23,11 +23,11 @@ export const App = () => {
         </div>
 
         <Routes>
-          <Route path="/welcome" element={<PageWelcome />} />
+          <Route path="/" element={<PageWelcome />} />
           <Route path="/products" element={<PageProducts />} />
           <Route path="/support" element={<PageSupport />} />
           <Route path="/aboutUs" element={<PageAboutUs />} />
-          <Route path="*" element={<Navigate to={"/welcome"} replace />} />
+          <Route path="*" element={<Navigate to={"/"} replace />} />
         </Routes>
 
         <>
