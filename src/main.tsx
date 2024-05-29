@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
-import { App } from "./App.tsx";
+import { App } from "./App";
 import { AppProvider } from "./AppContext";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <AppProvider speed={0} start={0} end={0}>
+  <AppProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>

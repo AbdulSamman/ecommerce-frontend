@@ -1,16 +1,12 @@
 export interface IAppProvider {
     children: React.ReactNode;
-    speed: number;
-    start: number;
-    end: number;
+
   }
 
   export interface IAppContext {
-
-
-
     rotateBox:number;
     currentSubtitle: number;
+    positionImg:number
 
   }
 

@@ -1,0 +1,62 @@
+@use "../variables" as *;
+
+.landingPage {
+  display: flex;
+  padding-top: 80px;
+  position: relative;
+  height: calc(100vh - 80px);
+  .title {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    z-index: 1;
+    row-gap: 2rem;
+    padding: 0 0 5rem 5rem;
+    h1 {
+      font-weight: bold;
+      font-size: 3.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      font-size: 1.3rem;
+      width: 100%;
+    }
+    button {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .boxCover {
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    left: 90%;
+    top: -20%;
+    background-color: $boxColor;
+    transform-origin: left top;
+    transform: translateX(80%);
+    transition: ease;
+  }
+}
+@media (max-width: 1000px) {
+  .landingPage {
+    .boxCover {
+      display: none;
+    }
+    .title {
+      width: 100%;
+      padding: 0 1rem;
+      align-items: center;
+      text-align: center;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

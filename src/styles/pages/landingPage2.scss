@@ -1,0 +1,110 @@
+@use "../variables" as *;
+
+.landingPage2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .imagesContainer {
+    transform: rotateZ(35deg);
+    z-index: 1;
+    transform-origin: right top;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mobile {
+      position: absolute;
+      left: 5rem;
+      z-index: 1;
+      :first-child {
+        position: relative;
+        width: 300px;
+        height: 550px;
+      }
+      :last-child {
+        position: absolute;
+        left: 28px;
+        bottom: 30px;
+        width: 250px;
+        height: 495px;
+        border-radius: 15px;
+      }
+    }
+    .tablet {
+      position: absolute;
+      left: 25rem;
+      z-index: 1;
+      transform: rotateZ(270deg);
+
+      :first-child {
+        position: relative;
+        width: 800px;
+        height: 770px;
+      }
+      :last-child {
+        position: absolute;
+        width: 750px;
+        height: 670px;
+        transform: rotateZ(90deg);
+        left: 18px;
+        bottom: 35px;
+        border-radius: 15px;
+      }
+    }
+  }
+  .textLeftContainer {
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    left: 0;
+    background-color: red;
+    transform-origin: left top;
+    transform: translateX(50%);
+    transition: 1s step-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
+      padding: 2rem 0;
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span::after {
+        content: "|";
+        padding: 0 2rem;
+      }
+    }
+    button {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .landingPage2 {
+    .imagesContainer {
+      display: none;
+    }
+    .textLeftContainer {
+      width: 100%;
+      text-align: center;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
