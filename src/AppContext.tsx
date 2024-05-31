@@ -17,7 +17,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
     switch (true) {
       case scrollY >= 450:
         setRotateBox(0);
-        setPositionImg(18);
+        setPositionImg(32);
         break;
       case scrollY >= 400:
         setRotateBox(5);
@@ -46,7 +46,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
         break;
 
       default:
-        setRotateBox(45);
+        setRotateBox(46);
         setPositionImg(0);
         break;
     }

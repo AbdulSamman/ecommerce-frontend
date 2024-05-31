@@ -14,7 +14,7 @@
     width: 50%;
     height: 100%;
     right: 0;
-    top: 35rem;
+    top: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,15 +27,15 @@
       transition: 0.5s ease;
       :first-child {
         position: relative;
-        width: 300px;
-        height: 550px;
+        width: 280px;
+        height: 530px;
       }
       :last-child {
         position: absolute;
-        left: 28px;
+        left: 26px;
         bottom: 30px;
-        width: 250px;
-        height: 495px;
+        width: 234px;
+        height: 475px;
         border-radius: 15px;
       }
     }
@@ -47,16 +47,16 @@
       transition: 0.5s ease;
       :first-child {
         position: relative;
-        width: 750px;
-        height: 720px;
+        width: 730px;
+        height: 690px;
       }
       :last-child {
         position: absolute;
-        width: 700px;
-        height: 620px;
+        width: 670px;
+        height: 600px;
         transform: rotateZ(90deg);
-        left: 18px;
-        bottom: 35px;
+        left: 23px;
+        bottom: 36px;
         border-radius: 15px;
       }
     }
