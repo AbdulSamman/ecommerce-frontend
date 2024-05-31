@@ -41,7 +41,7 @@ export const LandingPage: React.FC = () => {
           className="boxCover"
           style={{
             transform: `rotateZ(${rotateBox}deg)`,
-            height: `${140 + rotateBox}%`,
+            height: `${160 + rotateBox}%`,
           }}></section>
       </div>
     </>
