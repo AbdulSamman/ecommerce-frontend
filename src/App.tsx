@@ -14,6 +14,11 @@ export const App = () => {
 
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "visible";
+    }
   };
 
   return (

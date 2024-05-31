@@ -84,8 +84,8 @@ body {
         position: fixed;
         width: 100%;
         height: 100%;
+
         top: 0;
-        overflow-y: none; //hier
       }
     }
   }
@@ -110,7 +110,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $backgroundColor;
+        background-color: rgb(218, 218, 218);
         position: fixed;
         row-gap: 1rem;
         top: 0;
@@ -123,10 +123,17 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          background-color: red;
           width: 100%;
-          height: 100%;
-          overflow-y: none; //hier
+
+          a {
+            font-size: 2.5rem;
+            &:hover {
+              text-decoration: underline;
+            }
+            &::first-letter {
+              font-size: 3rem;
+            }
+          }
         }
       }
     }
