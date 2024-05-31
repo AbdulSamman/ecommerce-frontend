@@ -7,7 +7,7 @@ import { Footer } from "./components/Footer";
 import { PageWelcome } from "./pages/PageWelcome";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsXLg } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -15,13 +15,16 @@ export const App = () => {
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
     //overFlowY when menu open
-    if (!isMenuOpen) {
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
       document.body.style.overflowY = "hidden";
     }
-    if (isMenuOpen) {
-      document.body.style.overflowY = "visible";
+    if (!isMenuOpen) {
+      window.document.body.style.overflowY = "visible";
     }
-  };
+  });
 
   return (
     <>
