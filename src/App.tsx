@@ -14,9 +14,11 @@ export const App = () => {
 
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
+    //overFlowY when menu open
     if (!isMenuOpen) {
       document.body.style.overflowY = "hidden";
-    } else {
+    }
+    if (isMenuOpen) {
       document.body.style.overflowY = "visible";
     }
   };
@@ -27,7 +29,9 @@ export const App = () => {
         className="App"
         onClick={() => {
           isMenuOpen && setIsMenuOpen(false);
-        }}>
+        }}
+        // style={{ overflowY: `${!isMenuOpen ? "visible" : "hidden"}` }}
+      >
         <div className="burgerMenu" onClick={handleMenuOpen}>
           {!isMenuOpen ? (
             <AiOutlineMenu className="menuIcon" />
