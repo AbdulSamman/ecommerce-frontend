@@ -16,5 +16,5 @@ export interface IAppProvider {
   }
 
   export const subtitle=[
-   "on a Website","on Instagram", "on Facebook","on TikTok","on Amazon","on Ebay","Everywhere Online",
+   "Website","Instagram", "Facebook","TikTok","Amazon","Ebay","Everywhere Online",
   ]

@@ -11,39 +11,42 @@ export const AppContext = createContext<IAppContext>({} as IAppContext);
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
   const [currentSubtitle, setCurrentSubtitle] = useState(0);
 
-  const [rotateBox, setRotateBox] = useState(40);
+  const [rotateBox, setRotateBox] = useState(46);
   const [positionImg, setPositionImg] = useState(0);
   const handleScroll: HandleScroll = (_, scrollY) => {
     switch (true) {
-      case scrollY >= 90:
+      case scrollY >= 450:
         setRotateBox(0);
-        setPositionImg(25);
+        setPositionImg(27);
         break;
-      case scrollY >= 80:
+      case scrollY >= 400:
         setRotateBox(5);
         break;
-      case scrollY >= 70:
+      case scrollY >= 350:
         setRotateBox(10);
-
         break;
-
-      case scrollY >= 60:
+      case scrollY >= 300:
         setRotateBox(15);
         break;
-      case scrollY >= 50:
+      case scrollY >= 250:
         setRotateBox(20);
         break;
-      case scrollY >= 40:
+      case scrollY >= 200:
         setRotateBox(25);
         break;
-      case scrollY >= 30:
+
+      case scrollY >= 150:
         setRotateBox(30);
         break;
-      case scrollY >= 20:
+      case scrollY >= 100:
         setRotateBox(35);
         break;
-      default:
+      case scrollY >= 50:
         setRotateBox(40);
+        break;
+
+      default:
+        setRotateBox(45);
         setPositionImg(0);
         break;
     }
