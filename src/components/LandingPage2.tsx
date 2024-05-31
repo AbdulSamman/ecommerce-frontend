@@ -51,20 +51,18 @@ export const LandingPage2: React.FC = () => {
           style={{
             transform: `rotateZ(${rotateBox}deg)`,
           }}>
-          <div>
-            <h1>Your first sale is only a few clicks away</h1>
-            <p>
-              The easiest way to sell anything — products, services, digital
-              goods, subscriptions — without coding, developers, designers.
-              Manage everything in one place — from your desk or on-the-go. Just
-              sign up and start building your dream.
-            </p>
-            <div className="row">
-              <span>Logo</span>
-              <p>2023 TOP PERFORMER. Small Business eCommerce Software</p>
-            </div>
-            <button>Get started for free</button>
+          <h1>Your first sale is only a few clicks away</h1>
+          <p>
+            The easiest way to sell anything — products, services, digital
+            goods, subscriptions — without coding, developers, designers. Manage
+            everything in one place — from your desk or on-the-go. Just sign up
+            and start building your dream.
+          </p>
+          <div className="row">
+            <span className="logo">Logo</span>
+            <span>2023 TOP PERFORMER. Small Business eCommerce Software</span>
           </div>
+          <button>Get started for free</button>
         </section>
       </div>
     </>
